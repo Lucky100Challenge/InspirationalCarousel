@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .fade {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+      .fade.show {
+        opacity: 1;
+      }
+    </style>
+    <title>Inspirational Quotes Carousel</title>
+  </head>
+  <body class="bg-transparent flex items-center justify-center min-h-screen">
+    <div
+      class="bg-white p-8 rounded-lg shadow-lg text-center max-w-md relative overflow-hidden"
+    >
+      <h1 class="text-3xl font-bold mb-6 text-gray-800">
+        Inspirational Quotes
+      </h1>
+      <div
+        id="quote-container"
+        class="text-xl font-medium italic px-6 py-4 rounded-lg bg-gray-50 shadow-inner transition-opacity duration-1000 fade"
+      >
+        <!-- Quotes will be displayed here -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
